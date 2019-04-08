@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity(),
      * [DogEditorFragment] on the button callback ([DogListFragment.activityCallback])
      */
     override fun onAddClick() {
-        Toast.makeText(this, "TODO: not implemented", Toast.LENGTH_SHORT).show()
+        // TODO("not implemented") // There is no way to add to the database right now
+        toastNotImplemented()
 
         val dogEditorFragment = DogEditorFragment()
         supportFragmentManager.beginTransaction()
@@ -48,8 +49,13 @@ class MainActivity : AppCompatActivity(),
     override fun onCancelClick() {
         onBackPressed()
     }
+
+    /**
+     * This function is the mandatory implementation of the [DogListFragment.OnListFragmentInteractionListener] interface.
+     */
     override fun onListFragmentInteraction() {
-        TODO("not implemented") // There is no list yet to interact with
+        // TODO("not implemented") // There is no list yet to interact with
+        toastNotImplemented()
     }
 
     /**
@@ -65,4 +71,12 @@ class MainActivity : AppCompatActivity(),
             .addToBackStack(MAIN_ACTIVITY_BACKSTACK)
             .commit()
     }
+}
+
+/**
+ * In Kotlin, this is called an extension function.
+ * This is a simple function that gets added to the class.
+ */
+fun AppCompatActivity.toastNotImplemented() {
+    Toast.makeText(this, "TODO: not implemented", Toast.LENGTH_SHORT).show()
 }
