@@ -1,4 +1,4 @@
-package me.camillebc.androidbasics.fragment
+package me.camillebc.androidbasics.view
 
 import android.os.Bundle
 import android.view.LayoutInflater

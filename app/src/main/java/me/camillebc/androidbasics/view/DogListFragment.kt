@@ -1,4 +1,4 @@
-package me.camillebc.androidbasics.fragment
+package me.camillebc.androidbasics.view
 
 import android.content.Context
 import android.os.Bundle

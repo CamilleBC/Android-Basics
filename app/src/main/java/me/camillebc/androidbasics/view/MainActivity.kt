@@ -1,11 +1,10 @@
-package me.camillebc.androidbasics
+package me.camillebc.androidbasics.view
 
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import me.camillebc.androidbasics.fragment.DogEditorFragment
-import me.camillebc.androidbasics.fragment.DogListFragment
+import me.camillebc.androidbasics.R
 
 private const val MAIN_ACTIVITY_BACKSTACK = "main_activity"
 

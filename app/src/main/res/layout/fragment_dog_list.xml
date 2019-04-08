@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layoutManager="LinearLayoutManager"
-        tools:context=".fragment.DogListFragment"
+        tools:context=".view.DogListFragment"
         tools:listitem="@layout/fragment_dog"/>
 
     <TextView
