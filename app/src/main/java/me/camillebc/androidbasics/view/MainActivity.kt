@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(),
      */
     override fun onAddClick() {
         // TODO("not implemented") // There is no way to add to the database right now
-        toastNotImplemented()
+        toast("not implemented")
 
         val dogEditorFragment = DogEditorFragment()
         supportFragmentManager.beginTransaction()
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity(),
      */
     override fun onListFragmentInteraction() {
         // TODO("not implemented") // There is no list yet to interact with
-        toastNotImplemented()
+        toast("not implemented")
     }
 
     /**
@@ -76,6 +76,6 @@ class MainActivity : AppCompatActivity(),
  * In Kotlin, this is called an extension function.
  * This is a simple function that gets added to the class.
  */
-fun AppCompatActivity.toastNotImplemented() {
-    Toast.makeText(this, "TODO: not implemented", Toast.LENGTH_SHORT).show()
+fun AppCompatActivity.toast(message: String) {
+    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }
