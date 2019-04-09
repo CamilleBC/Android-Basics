@@ -1,4 +1,4 @@
-package me.camillebc.androidbasics.view
+package me.camillebc.androidbasics.view.fragment
 
 import android.content.Context
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_dog_list.*
 import me.camillebc.androidbasics.R
+import me.camillebc.androidbasics.view.model.Dog
 
 /**
  * A fragment representing a list of [Dog].
@@ -34,7 +35,7 @@ class DogListFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         activity?.let { fragmentActivity ->
             activityCallback = fragmentActivity as OnAddClickListener
-            button_dogList_add.setOnClickListener{ activityCallback.onAddClick() }
+            button_dogList_add.setOnClickListener{ activityCallback.onListAddClick() }
         }
     }
 
@@ -63,9 +64,9 @@ class DogListFragment : Fragment() {
      * for more information.
      */
     interface OnListFragmentInteractionListener {
-        fun onListFragmentInteraction()
+        fun onListFragmentInteraction(dog: Dog)
     }
     interface OnAddClickListener {
-        fun onAddClick()
+        fun onListAddClick()
     }
 }

@@ -8,7 +8,7 @@
     android:layout_margin="@dimen/small_margin"
     >
 
-    <androidx.recyclerview.widget.RecyclerView
+    <me.camillebc.androidbasics.view.recyclerview.RecyclerViewEmptySupport
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layoutManager="LinearLayoutManager"
-        tools:context=".view.DogListFragment"
+        tools:context=".view.fragment.DogListFragment"
         tools:listitem="@layout/fragment_dog"/>
 
     <TextView
